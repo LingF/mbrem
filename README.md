@@ -1,5 +1,5 @@
-# mbrem
-postcss plugin
+# postcss-mbrem
+PostCSS plugin
 
 ## Install
 
@@ -53,4 +53,9 @@ With npm do:
 ```
 
 ## Description
-一个简单的手机端需求，开发中需要使用rem的适配方案，但在拿到设计稿后测量元素尺寸位置得出的像素值还需要通过计算再写入css，这样相当麻烦。类似在使用[hotcss](https://github.com/imochen/hotcss)这个结解决方案时，每次需要带入自定义的sass方程_rem2px_，受此影响何不创造一种新的单位来直接书写，免去方程的书写和单位的换算，省时省力。
+这个插件启发于一个简单的手机端需求。
+开发中需要使用rem的适配方案，但在拿到设计稿后,我们测量元素尺寸、位置等得到的像素值每次需要通过计算再写入css，这样相当麻烦。
+在使用了[hotcss](https://github.com/imochen/hotcss)这个结解决方案后，省去了计算提高了开发效率。不过随之带来了新的问题，每次需要带入自定义的sass方程_rem2px_，受此影响，我想何不创造一种新的单位来直接书写，免去方程的书写，也汲取单位的换算在新的单位中，省时省力。所以通过PostCSS写了这个简单的插件。
+
+
+
