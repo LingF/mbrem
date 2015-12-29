@@ -37,18 +37,18 @@ With npm do:
 ### Example
 
 ``` javascript
-    var gulp = require('gulp');
+  var gulp = require('gulp');
 
-    var postcss = require('gulp-postcss'),
-        mbrem = require('gulp-mbrem');
+  var postcss = require('gulp-postcss'),
+      mbrem = require('gulp-mbrem');
 
-    gulp.task('default', function() {
-        var processors = [
-              mbrem({width: 1125})
-            ];
-        return gulp.src(["./src/c/*.css"])
-              .pipe(postcss(processors))
-              .pipe(gulp.dest("./dest/c/"));
+  gulp.task('default', function() {
+    var processors = [
+          mbrem({width: 1125})
+        ];
+    return gulp.src(["./src/c/*.css"])
+        .pipe(postcss(processors))
+        .pipe(gulp.dest("./dest/c/"));
     });
 ```
 
